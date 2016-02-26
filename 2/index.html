@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Оформлення замовлення</title>
+	<meta charset="utf-8"/>
+	<link href="css/style.css" rel="stylesheet" type="text/css" />
+</head>
+	<body>
+	<h1>Обери Свій Термос</h1>
+	<body>
+	<div id="your_choice">
+	<form name="forma1">
+				<div id="color">
+					<p>Color:<br> 
+							<input type="checkbox" name="color_all" id="color_all" value="all" onclick="selectAll(this)" class="colors"> all color	
+						<br><input type="checkbox" name="color_white" id="color_white" value="white" class="colors"> white
+						<br><input type="checkbox" name="color_black" id="color_black" value="red" class="colors"> black
+						<br><input type="checkbox" name="color_red" id="color_red" value="red" class="colors"> red 
+						<br><input type="checkbox" name="color_yellow" id="color_yellow" value="yellow" class="colors"> yellow
+						<br><input type="checkbox" name="color_green" id="color_green" value="green" class="colors"> green 
+						<br><input type="checkbox" name="color_blue" id="color_blue" value="blue" class="colors"> blue
+						<br><input type="checkbox" name="color_brown" id="color_brown" value="brown" class="colors"> brown
+						<br><input type="checkbox" name="color_pink" id="color_pink" value="pink" class="colors"> pink					 
+						
+					</p>
+				</div>
+				<div id="material">
+					<p<br>Material:<br> 
+						<select>
+							<option value="steel">steel</option>
+							<option value="plastik">plastik</option>
+						</select>
+					</p>	
+				</div>	
+				<div id="size">
+					<p><br>Size:<br> 
+						<input type="checkbox" name="Size_03" value="0,3 l"> 0,3 l
+						<input type="checkbox" name="Size_05" value="0,5 l"> 0,5 l
+						<input type="checkbox" name="Siz_1" value="1 l"> 1,0 l
+					</p>
+				</div>	
+				<div id="Add ">
+					<p><br>Additional accessories:<br> 
+						<input type="checkbox" name="2cup" value="2 cup"> 2 cup
+						<input type="checkbox" name="cover" value="cover"> cover
+					</p>
+				</div>	
+			</form>
+	<form action="" method="post" id="form">
+		<h1>Оформлення замовлення</h1>
+		<div class="form-content" id="cart">
+			<h2>Продукти</h2>
+		</div>
+		<div class="form-content" id="customer">
+			<h2>Дані покупця</h2>
+			Ваше ім'я<br/>
+			<input type="text" name="name" value="" placeholder="Ваше ім'я" class="required" /><br/>
+			<br/>
+			Телефон<br/>
+			<input id="input-phone" type="tel" name="phone" value="" placeholder="(000)000-00-00" class="required" /><br/>
+			<br/>
+			Електронна адреса<br/>
+			<input id="input-email" type="email" name="email" value="" placeholder="Електронна адреса" class="required" /><br/>
+			<br/>
+		</div>
+		<div class="form-content" id="shipping">
+			<h2>Доставка</h2>
+			<input id="input-shipping1" type="radio" name="shipping" value="0" checked/><label for="input-shipping1">Заберу сам - 0 грн.</label>
+			<br/>
+			<input id="input-shipping2" type="radio" name="shipping" value="35"/><label for="input-shipping2">Нова пошта - 35 грн.</label>
+			<br/>
+			<br/>
+		</div>
+		<div class="clear"></div>
+		<input id="license" type="checkbox" name="license" value="1" class="required" />
+		<label for="license">Я приймаю ліцензійні угоди</label>
+		<br/>
+		<br/>
+		<input type="submit" name="ok" value="Оформити" class="button-submit" id="button-submit" />
+	</form>
+	<script type="text/javascript" src="js/js.js"></script>
+</body>
+</html>
